@@ -10,4 +10,12 @@
 
     <artifactId>e-commerce-impl</artifactId>
     <version>0.0.1-SNAPSHOT</version>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.myorganisation.mydepartment</groupId>
+            <artifactId>e-commerce-domain</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
 </project>
