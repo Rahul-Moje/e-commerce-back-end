@@ -1,5 +1,6 @@
 package com.myorganisation.mydepartment.ecommerce;
 
+import java.math.BigDecimal;
 import java.util.List;
 
 public class Product {
@@ -15,6 +16,8 @@ public class Product {
     private Long quantity;
 
     private List<String> features;
+
+    private BigDecimal price;
 
     public Long getProductId() {
         return productId;
@@ -62,5 +65,13 @@ public class Product {
 
     public void setFeatures(List<String> features) {
         this.features = features;
+    }
+
+    public BigDecimal getPrice() {
+        return price;
+    }
+
+    public void setPrice(BigDecimal price) {
+        this.price = price;
     }
 }
