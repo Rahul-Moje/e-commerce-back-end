@@ -1,5 +1,6 @@
 package com.myorganisation.mydepartment.ecommerce;
 
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -10,6 +11,7 @@ import java.util.List;
 public class ProductController {
 
     @GetMapping("/products")
+    @CrossOrigin("http://localhost:3000")
     public List<Product> getAllProducts() {
         List<Product> productList = new ArrayList<>();
         Product product = new Product();
