@@ -4,6 +4,7 @@ import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -20,6 +21,7 @@ public class ProductController {
         product.setCategory(Category.ELECTRONICS);
         product.setSubCategory(SubCategory.MOBILE);
         product.setQuantity(100L);
+        product.setPrice(BigDecimal.valueOf(12999.99));
         List<String> features = new ArrayList<>();
         features.add("4GB RAM");
         features.add("64GB Internal Storage");
